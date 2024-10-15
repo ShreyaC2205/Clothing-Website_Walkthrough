@@ -1,7 +1,6 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(20, 20, 20);
     
 }
 ::-webkit-scrollbar{
@@ -9,6 +8,7 @@
 }
 ::-webkit-scrollbar-track{
     background-color: transparent;
+    background-color: rgb(20, 20, 20);
 }
 ::-webkit-scrollbar-thumb{
     height: 1vw;
@@ -25,25 +25,34 @@
     padding: 10vw;
     gap: 2vw;
     overflow-x: hidden;
+    background-color: rgb(20, 20, 20);
 }
 
 #introduction h1 {
     text-align: center;
     color: white;
     font-size: 2vw;
+    color: #60cdff;
 }
 
 #introduction p {
     width: 100%;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     color: rgb(243, 243, 243);
     text-align: center;
+}
+.toolList{
+    width: 100%;
+    font-size: 1.5vw;
+    color: rgb(243, 243, 243);
+    text-align: left;
+    text-align: justify;
 }
 
 .para {
     color: rgb(255, 255, 47);
     padding: 0;
-    font-size: 1.3vw
+    font-size: 1.5vw
 }
 
 .para1 {
@@ -66,9 +75,8 @@
     object-fit: contain;
     padding: 1vw;
     border-radius: 5vw;
+    background-color: rgb(20, 20, 20);
 }
-
-@property --angle {}
 
 .logo::after,
 .logo::before {
@@ -97,14 +105,595 @@
     }
 }
 
-#Features{
-    width: calc(100vw - 10px);
-    height: 100vh;
-    padding: 2vw;
+#walkthroughVideo{
+    position: relative;
     overflow-x: hidden;
+    width: calc(100vw - 10px);
+    min-height: 100vh;
+    max-height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#walkthroughVideo h1{
+   color:  #60cdff;
+}
+#walkthroughVideo button {
+    padding: 10px 20px;
+    background-color: #60cdff; /* Your desired button color */
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2vw; /* Adjust font size */
+    transition: background-color 0.3s;
+}
+
+#walkthroughVideo button:hover {
+    background-color: #0099cc; /* Darker shade on hover */
+}
+.walkthroughInfo{
+    font-size: 1.5vw;
+    /* margin-bottom: 2vw; */
+}
+#Features{
+    position: relative;
+    overflow-x: hidden;
+    width: calc(100vw - 10px);
+    min-height: 100vh;
+    max-height: 100vh;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+}
+
+#Features h1{
+    color: #60cdff;
+} 
+.FeaturesDiv{
+    position: relative;
+    width: calc(100vw - 10px);
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 1vw;
+    overflow-x: hidden;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+.info h1{
+    color: white;
+    margin-bottom: 1.2vw;
+}
+.info span{
+    color: rgb(243, 243, 243);
+    font-size: 1.5vw;
 }
 .gifs{
     width: 100%;
     height: 100%;
-    background-color:red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1vw;
+}
+.components1{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1vw;
+    
+}
+.components2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1vw;
+}
+.components3{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1vw;
+}
+.components4{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1vw;
+}
+.components5{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1vw;
+}
+.content1{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 2px solid yellow
+}
+.content1::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.expand-btn{
+    border-radius: 0.5vw;
+    padding: 0.5vw;
+    font-weight: bold;
+    width: 8vw;
+    background-color: yellow;
+}
+.components{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 8;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    justify-content: center;
+    align-items: center;
+}
+.components span{
+    font-size: 1.5vw;
+    background-color: transparent;
+    font-weight: bold;
+}
+.expand {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(8, 8, 8, 0.952);
+    z-index: 150;
+    padding: 2vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  .expand.show {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2vw;
+  }
+  
+  .expandGIF {
+    width: 75%;
+    height: 75%;
+    background-color: #0099cc;
+    border-radius: 1vw;
+  }
+  .expandGIF img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 1vw;
+  }
+
+  .close-btn {
+    position: absolute;
+    right: 2vw;
+    top: 2vw;
+    font-size: 2vw;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+.content2{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+.content2::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+.content3{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+.content3::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content4{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+.content4::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content5{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+
+.content5::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content6{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+
+.content6::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content6 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content7{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+
+.content7::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content7 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content8{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+.content8::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content8 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content9{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+.content9::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content9 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content10{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+.content10::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content10 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content11{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+.content11::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content11 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content12{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+.content12::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content12 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content13{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+.content13::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content13 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content14{
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+.content14::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content14 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content15{
+
+    position: relative;
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+.content15::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.658);
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.content15 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.description p{
+    color: rgb(243, 243, 243);
+    font-size: 1.5vw;
+}
+
+#Tools{
+    width: calc(100vw - 10px);
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+    
+}
+.toolInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2vw;
+    padding: 10vw;
+}
+.toolInfo, #challenges h1{
+    color: #60cdff;
+}
+#Tools p{
+    color: rgb(243, 243, 243);
+    font-size: 1.5vw;
+}
+#challenges{
+    width: calc(100vw - 10px);
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    gap: 4vw;
+}
+.desc{
+    /* background-color: red; */
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 70%;
+    max-height: 70%;
+}
+.QApara{
+    width: auto;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    gap: 4vw;
+}
+.gif{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.gif img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.QandADivs{
+    display: flex;
+}
+.QandA1{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    text-align: justify;
+    color: rgb(243, 243, 243);
+}
+.QandA1 h2{
+    text-align: center;
+    margin-bottom: 2vw;
+    color: white;
+}
+.QandA1 p{
+    font-size: 1.5vw;
+}
+.QandA1 strong{
+    color: yellow;
+}
+.clng{
+    color: red;
 }
