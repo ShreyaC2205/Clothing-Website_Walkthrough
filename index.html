@@ -33,15 +33,15 @@
       elements and user interactions implemented in my clothing website. Additionally, a link to my GitHub repository is
       included to explore the coding aspects of the project in detail. <span class="para">I aim to highlight the
         intuitive UI and engaging animations that enhance the overall user experience.</span></p>
-        <div class="buttons">
-    <a href="https://www.loom.com/share/a9292269dab14c8a8b0f0cac929ede9e?sid=f28620c6-f9b3-4e99-9a79-fb8e7c70db7e"
-      target="_blank">
-      <button>Watch Video</button>
-    </a>
-    <a href="https://github.com/ShreyaC2205/women-clothing-website" target="_blank">
-      <button>Explore Code</button>
-    </a>
-  </div>
+    <div class="buttons">
+      <a href="https://www.loom.com/share/a9292269dab14c8a8b0f0cac929ede9e?sid=f28620c6-f9b3-4e99-9a79-fb8e7c70db7e"
+        target="_blank">
+        <button>Watch Video</button>
+      </a>
+      <a href="https://github.com/ShreyaC2205/women-clothing-website" target="_blank">
+        <button>Explore Code</button>
+      </a>
+    </div>
   </section>
 
 
@@ -416,7 +416,15 @@
         <img src="./public/GIFs/gif14.gif" alt="Styling Tips Section">
       </div>
       <div class="description">
-        <p>The "Styling Tips" component suggests how to style your outfit like complementary accessories such as ornaments, footwear, and handbags to pair with an outfit. It features a rotating display of products with a "Quick Buy" section for each pairing, highlighting key details like brand names, descriptions, prices, offers, and ratings. A unique aspect of this component is that the outfits shown in the background image are the same as those displayed in the product cards. As users explore different outfit combinations using the "Next" button, the same outfit is mirrored in the Quick Buy cards, ensuring consistency and enhancing the shopping experience. <span class="para">Smooth transitions between product images, interactive elements, and dynamic visuals encourage users to shop or explore more, while animations enhance the overall interactivity and design.</span></p>
+        <p>The "Styling Tips" component suggests how to style your outfit like complementary accessories such as
+          ornaments, footwear, and handbags to pair with an outfit. It features a rotating display of products with a
+          "Quick Buy" section for each pairing, highlighting key details like brand names, descriptions, prices, offers,
+          and ratings. A unique aspect of this component is that the outfits shown in the background image are the same
+          as those displayed in the product cards. As users explore different outfit combinations using the "Next"
+          button, the same outfit is mirrored in the Quick Buy cards, ensuring consistency and enhancing the shopping
+          experience. <span class="para">Smooth transitions between product images, interactive elements, and dynamic
+            visuals encourage users to shop or explore more, while animations enhance the overall interactivity and
+            design.</span></p>
       </div>
       <button class="close-btn">&#10006</button>
     </div>
@@ -426,7 +434,15 @@
         <img src="./public/GIFs/gif15.gif" alt="Contact Section">
       </div>
       <div class="description">
-        <p>The 'Contact Us' component is designed to streamline communication between the brand and its customers. At the top of the page, key titles like "Best Price," "Free Shipping," and "Cash on Delivery," along with icons, emphasize the brand's commitment to customer satisfaction. Trust is further reinforced with logos showcasing "Secure Payment," "Great Customer Satisfaction," and "Premium Quality." Social media links enable customers to connect easily, while a Google Play Store icon offers direct access to the mobile app. Various payment methods ensure seamless transactions, and customers can reach support via email, phone, or live chat 24/7. Additionally, customer reviews and ratings are featured in an engaging auto-slide animation, enhancing credibility and fostering trust. <span class="para">This comprehensive approach not only streamlines customer interaction but also strengthens the brand's relationship with its audience.</span></p>
+        <p>The 'Contact Us' component is designed to streamline communication between the brand and its customers. At
+          the top of the page, key titles like "Best Price," "Free Shipping," and "Cash on Delivery," along with icons,
+          emphasize the brand's commitment to customer satisfaction. Trust is further reinforced with logos showcasing
+          "Secure Payment," "Great Customer Satisfaction," and "Premium Quality." Social media links enable customers to
+          connect easily, while a Google Play Store icon offers direct access to the mobile app. Various payment methods
+          ensure seamless transactions, and customers can reach support via email, phone, or live chat 24/7.
+          Additionally, customer reviews and ratings are featured in an engaging auto-slide animation, enhancing
+          credibility and fostering trust. <span class="para">This comprehensive approach not only streamlines customer
+            interaction but also strengthens the brand's relationship with its audience.</span></p>
       </div>
       <button class="close-btn">&#10006</button>
     </div>
@@ -449,7 +465,9 @@
       </ul>
       <p>
         The combination of these tools allowed me to build a dynamic, fast, and user-friendly website with great design
-        flexibility. In addition to my own efforts, I utilized AI tools like ChatGPT and online resources to achieve the desired outcomes and solve challenges during development. This experience expanded my knowledge of effectively using AI and digital platforms to find solutions and enhance the overall development process.
+        flexibility. In addition to my own efforts, I utilized AI tools like ChatGPT and online resources to achieve the
+        desired outcomes and solve challenges during development. This experience expanded my knowledge of effectively
+        using AI and digital platforms to find solutions and enhance the overall development process.
         <span class="para">Working with these tools enhanced my knowledge of modern web development practices and
           sharpened my ability to integrate seamless animations into web designs.</span>
       </p>
@@ -460,6 +478,7 @@
     <h1>Challenges & Solutions</h1>
     <div class="desc">
       <div class="QApara">
+        <button class="slideLeft">&#10095</button>
         <div class="QandADivs">
           <div class="QandA1">
             <div class="gif">
@@ -477,6 +496,7 @@
               </p>
             </div>
           </div>
+
           <div class="QandA1">
             <div class="gif">
               <img src="/public/GIFs/gif2.gif" alt="landing page">
@@ -552,6 +572,93 @@
                 references enhanced the depth of the 3D effect, making it appear as
                 though the images were dynamically popping out of the screen, thus creating an engaging experience for
                 users.
+              </p>
+            </div>
+          </div>
+
+          <div class="QandA1">
+            <div class="gif">
+              <img src="/public/GIFs/gif7.gif" alt="landing page">
+            </div>
+            <div>
+              <h2> <span class="clng">Challenge:</span> Optimizing Smooth Image Transitions and Vertical Sliding in
+                Category Display
+              </h2>
+              <p><strong>Description:</strong>The first challenge involved animating multiple images within each
+                CategoryCard, ensuring smooth transitions as each image becomes visible one after another. Additionally,
+                the second challenge was implementing vertical sliding functionality, allowing users to navigate through
+                categories using up and down arrows, while maintaining fluid transitions and avoiding layout or overflow
+                issues. <br>
+                <strong>Solution:</strong> The sliding animation of multiple images in each CategoryCard is handled
+                using CSS, where images are placed side by side in a flex container, and transitions are applied for
+                smooth horizontal movement. the animation is handled by applying CSS transformations using translateX.
+                The images maintain responsiveness with object-cover and are optimized by Next.js for quick loading and
+                seamless transitions.
+                For the next challenge The solution enables smooth vertical sliding by adjusting the scroll position
+                using scrollTo and scrollTop. Clicking the arrow scrolls 20% of the viewport height, resetting to the
+                top when reaching the bottom for a seamless loop.
+              </p>
+            </div>
+          </div>
+
+          <div class="QandA1">
+            <div class="gif">
+              <img src="/public/GIFs/gif11.gif" alt="landing page">
+            </div>
+            <div>
+              <h2> <span class="clng">Challenge:</span> Achieving Smooth Transitions and Neon Light Effects
+              </h2>
+              <p><strong>Description:</strong>Managing smooth transitions between different product groups in the Shop
+                section, while also creating a heading that mimicked a neon signboard, posed significant challenges. The
+                Shop section required handling a large number of product cards, dynamic image loading, and fluid
+                animations, which complicated performance optimization. Simultaneously, achieving a realistic neon light
+                effect for the heading involved precise control over color transitions, shadows, and timing to replicate
+                the look of a neon sign turning on from "off." <br>
+                <strong>Solution:</strong> I used Framer Motion to implement smooth transitions for both the product
+                group navigation and the neon signboard animation. For the Shop section, Framer Motion’s ease-in-out
+                transitions paired with Next.js image optimization ensured fluid interactions without performance loss.
+                For the neon sign, I fine-tuned color and shadow effects to create an authentic lighting glow. These
+                solutions improved both visual dynamics and performance, enhancing my ability to craft complex
+                animations and optimize large UI components.
+              </p>
+            </div>
+          </div>
+
+          <div class="QandA1">
+            <div class="gif">
+              <img src="/public/GIFs/gif12.gif" alt="New arrival">
+            </div>
+            <div>
+              <h2> <span class="clng">Challenge:</span> Achieving auto-scroll and manual scroll and implement smooth transitions
+              </h2>
+              <p><strong>Description:</strong>Implementing an auto-scroll feature in the 'New Arrival' section while ensuring smooth transitions, responsive behavior, and uninterrupted user interaction presented a challenge. Achieving seamless, fluid scrolling across a wide range of product images required precise timing and control of both manual and automatic scrolling. Additionally, handling dynamic image loading efficiently without causing performance lags or visual glitches was critical for maintaining an optimal user experience.<br>
+                <strong>Solution:</strong> By leveraging the useRef hook in combination with the setInterval function, I created a responsive auto-scroll mechanism that resets based on user interaction. The scroll position was managed dynamically to ensure smooth transitions, while Next.js's image optimization handled image loading efficiently. This process enhanced my skills in managing dynamic scrolling behavior and optimizing image-heavy components for high performance.
+              </p>
+            </div>
+          </div>
+
+          <div class="QandA1">
+            <div class="gif">
+              <img src="/public/GIFs/gif13.gif" alt="landing page">
+            </div>
+            <div>
+              <h2> <span class="clng">Challenge:</span> Efficient Prop Management in React
+              </h2>
+              <p><strong>Description:</strong>The primary challenge was managing the complexity of passing multiple props through several component layers in a React application. Specifically, I needed to efficiently pass various product-related data, such as images, descriptions, ratings, prices, and offers, from the top-level page.js component to the nested Trending.js and subsequently to the ProductCard.js component. This complexity could lead to potential issues with prop drilling and maintainability as the application scales.<br>
+                <strong>Solution:</strong> To address this challenge, I structured the data as a single object for each product within page.js, which included all necessary attributes. This approach minimized prop drilling by consolidating the product information into an easily manageable format. In Trending.js, I destructured the props and mapped them to individual ProductCard components, thereby ensuring a clean and efficient data flow. Additionally, I utilized PropTypes to validate the props in ProductCard.js, enhancing the robustness and maintainability of the component.
+              </p>
+            </div>
+          </div>
+
+          <div class="QandA1">
+            <div class="gif">
+              <img src="/public/GIFs/gif14.gif" alt="landing page">
+            </div>
+            <div>
+              <h2> <span class="clng">Challenge:</span> Quick Buy Section with Dynamic Product Synchronization and Responsive Interaction
+              </h2>
+              <p><strong>Description:</strong> Managing state for displaying paired products and ensuring that the product card outfits correspond to the background image, while handling user interactions effectively for a smooth user experience.<br>
+                <strong>Solution:</strong> Implemented React's useState and useEffect hooks to manage the current image index, dynamically rendering paired product cards that correspond to the changing background image. This synchronization ensures that the outfit displayed in the product card matches the outfit shown in the background. To enhance user engagement, mouse enter and leave event listeners were utilized to control the visibility of the quick buy section; it opens on hover and remains visible while the cursor is over it, closing only when the cursor leaves the quick buy div. Additionally, references were employed to manage opacity transitions, providing an intuitive interface that facilitates seamless interaction between different product displays and enhances the overall user experience.
               </p>
             </div>
           </div>
