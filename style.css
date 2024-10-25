@@ -135,6 +135,7 @@
     font-weight: 700;
     font-style: normal;
     font-size: 1.8vw;
+    word-spacing: 0.2vw;
 }
 #walkthroughVideo button {
     padding: 10px 20px;
@@ -154,7 +155,9 @@
 }
 .walkthroughInfo{
     font-size: 1.5vw;
-    /* margin-bottom: 2vw; */
+}
+#walkthroughVideo button:active{
+    padding: 8px 18px;
 }
 .buttons{
     display: flex;
@@ -278,7 +281,6 @@
 .components span{
     font-size: 1.3vw;
     background-color: transparent;
-    /* font-weight: bold; */
     font-family: "Libre Bodoni", serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -313,7 +315,6 @@
   .expandGIF {
     width: 72%;
     height: 75%;
-    /* background-color: #0099cc; */
     border-radius: 1vw;
   }
   .expandGIF img{
@@ -659,7 +660,6 @@
     text-align: center;
     gap: 2vw;
     padding: 10vw;
-    /* background-color: #0099cc; */
 }
 .toolInfo h1, #challenges h1{
     color: #60cdff;
@@ -668,11 +668,11 @@
     font-weight: 700;
     font-style: normal;
     font-size: 1.8vw;
+    word-spacing: 0.4vw;
 }
 #Tools p{
     color: rgb(243, 243, 243);
     font-size: 1.5vw;
-    /* background-color: red; */
     padding-left: 1.2vw;
 }
 #challenges{
@@ -682,12 +682,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: top; */
     padding-top: 1.5vw;
-    /* background-color: red; */
 }
 .desc{
-    /* background-color: red; */
     position: relative;
     min-width: 80%;
     max-width: 80%;
@@ -699,7 +696,6 @@
     width: auto;
     height: 100%;
    position: relative;
-    /* background-color: #60cdff; */
 }
 .gif{
     height: 100%;
@@ -719,7 +715,6 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* background-color: red; */
 }
 .QandADivs::-webkit-scrollbar{
     display: none;
@@ -738,7 +733,6 @@
     grid-template-rows: 38% 62%;
     gap: 2vw;
     box-sizing: border-box;
-    /* background-color: #0099cc; */
 }
 .QandA1 h2{
     text-align: center;
@@ -825,9 +819,7 @@
     min-width: 100%;
     max-height: 100%;
     min-height: 100%;
-    /* overflow: hidden; */
     border-radius: 1.2vw;
-    /* background-color: #60cdff; */
 }
 .container{
     display: flex;
