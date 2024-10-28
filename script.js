@@ -14,29 +14,29 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', function () {
       const target = button.getAttribute('data-target');
       const expandDiv = document.getElementById(target);
-      const gif = expandDiv.querySelector('.expandGIF img');
+      const video = expandDiv.querySelector('.expandGIF video');
       
-      const gifSrc = gif.getAttribute('src');
-      gif.setAttribute('src', gifSrc); 
+      video.play();  
       expandDiv.classList.add('show');
     });
   });
 
-
   closeButtons.forEach(button => {
     button.addEventListener('click', function () {
       const expandDiv = button.closest('.expand');
+      const video = expandDiv.querySelector('.expandGIF video');
+
+      video.pause(); 
       expandDiv.classList.remove('show');
     });
   });
-
 
   slideLeftBtn.addEventListener("click", function() {
     currentIndex = (currentIndex + 1) % QandAItems.length;
     
     const translateXValue = -currentIndex * 100; 
 
-    QandAItems.forEach((item, index) => {
+    QandAItems.forEach((item) => {
       item.style.transform = `translateX(${translateXValue}%)`;
       item.style.transition = 'transform 0.5s ease';
     });
@@ -47,13 +47,11 @@ document.addEventListener('DOMContentLoaded', function () {
     
     const translateXValue = -currentIndex * 100;
 
-    QandAItems.forEach((item, index) => {
+    QandAItems.forEach((item) => {
       item.style.transform = `translateX(${translateXValue}%)`;
       item.style.transition = 'transform 0.5s ease'; 
     });
   });  
-
-
 
   function updateImagePosition() {
     const translateXValue = -currentIndex * 100;
@@ -62,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
       item.style.transition = 'transform 0.5s ease';
     });
   }
-
 
   updateImagePosition();
 
@@ -76,6 +73,3 @@ document.addEventListener('DOMContentLoaded', function () {
     updateImagePosition();
   });
 });
-
-
-
