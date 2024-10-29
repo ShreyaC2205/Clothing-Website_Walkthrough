@@ -191,8 +191,9 @@
     overflow-x: hidden;
     text-align: center;
     display: grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 5fr;
 }
+
 .info h1{
     color: white;
     margin-bottom: 1.2vw;
@@ -202,8 +203,10 @@
     font-size: 1.5vw;
 }
 .gifs{
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1vw;
@@ -323,10 +326,10 @@
     border-radius: 1vw;
   }
   .expandGIF video{
-    width: 100%;     /* Full width to fit container */
-  height: auto;    /* Maintain aspect ratio */
-  object-fit: contain; /* Ensures video fills container without distortion */
-  border-radius: 8px; /* Match styling with other elements, if needed */
+    width: 100%;     
+  height: auto;   
+  object-fit: contain;
+  border-radius: 8px; 
   transition: opacity 0.5s ease;
   }
   .expand.show video {
@@ -360,11 +363,15 @@
     top: 0;
     left: 0;
 }
-.content2 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: right;
+.content2 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 .content3{
     position: relative;
@@ -382,10 +389,15 @@
     top: 0;
     left: 0;
 }
-.content3 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content3 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 .content4{
     position: relative;
@@ -403,10 +415,15 @@
     top: 0;
     left: 0;
 }
-.content4 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content4 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 .content5{
     position: relative;
@@ -425,10 +442,15 @@
     top: 0;
     left: 0;
 }
-.content5 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content5 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 .content6{
     position: relative;
@@ -447,10 +469,15 @@
     top: 0;
     left: 0;
 }
-.content6 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content6 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 .content7{
     position: relative;
@@ -469,10 +496,15 @@
     top: 0;
     left: 0;
 }
-.content7 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content7 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 
 .content8{
@@ -491,10 +523,15 @@
     top: 0;
     left: 0;
 }
-.content8 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content8 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 
 .content9{
@@ -513,10 +550,15 @@
     top: 0;
     left: 0;
 }
-.content9 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content9 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 
 .content10{
@@ -535,10 +577,15 @@
     top: 0;
     left: 0;
 }
-.content10 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content10 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 .content11{
     position: relative;
@@ -556,10 +603,15 @@
     top: 0;
     left: 0;
 }
-.content11 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content11 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 .content12{
     position: relative;
@@ -577,10 +629,15 @@
     top: 0;
     left: 0;
 }
-.content12 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content12 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 
 .content13{
@@ -599,10 +656,15 @@
     top: 0;
     left: 0;
 }
-.content13 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content13 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 .content14{
     position: relative;
@@ -620,10 +682,15 @@
     top: 0;
     left: 0;
 }
-.content14 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content14 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 .content15{
 
@@ -642,10 +709,15 @@
     top: 0;
     left: 0;
 }
-.content15 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.content15 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;     
+  height: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
 }
 .description p{
     color: rgb(243, 243, 243);
