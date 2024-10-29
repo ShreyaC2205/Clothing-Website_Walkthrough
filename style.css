@@ -344,7 +344,6 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    cursor: pointer;
   }
   
 .content2{
@@ -842,6 +841,7 @@
     border: none;
     background-color: yellow;
     z-index: 100;
+    cursor: pointer;
 }
 .slideLeft:hover{
     background-color: rgb(219, 219, 1);
@@ -862,6 +862,7 @@
     border: none;
     background-color: yellow;
     z-index: 100;
+    cursor: pointer;
 }
 .slideRight:hover{
     background-color: rgb(219, 219, 1);
@@ -942,8 +943,15 @@
     z-index: 99;
     color: white;
     padding: 0.6vw;
-    font-size: 1vw;
+    font-size: 0.9vw;
     border-top-right-radius: 1.2vw;
+    font-family: "Libre Bodoni", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    word-spacing: 0.2vw;
+
 }
 .ImgslideLeft{
     position: absolute;
@@ -957,6 +965,7 @@
     border: none;
     background-color: yellow;
     z-index: 100;
+    cursor: pointer;
 }
 .ImgslideLeft:hover{
     background-color: rgb(219, 219, 1);
@@ -977,6 +986,7 @@
     border: none;
     background-color: yellow;
     z-index: 100;
+    cursor: pointer;
 }
 .ImgslideRight:hover{
     background-color: rgb(219, 219, 1);
